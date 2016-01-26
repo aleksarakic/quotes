@@ -1,0 +1,38 @@
+body {
+	background: none !important; 
+}
+h2 {
+	font-weight: bold;
+}
+
+html {
+	background: url(images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.headingspan {
+	color: white;
+}
+
+.text-center {
+	color: white;
+}
+
+.quote,
+.author {
+	color: white;
+}
+
+.quotediv {
+	padding: 20px;
+	margin-top: 20px;
+	width: 600px; 
+	
+	
+}
+.well {
+   background-color: rgba(300, 245, 245, 0.1) !important;
+}
