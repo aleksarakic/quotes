@@ -1,4 +1,4 @@
-var funkcija = function(){
+var func = function(){
 	function reqListener() {
 		  $('.quote').empty();
 			$('.author').empty();
@@ -18,6 +18,6 @@ var funkcija = function(){
 }//ULEPSATI!!!
 
 $(document).ready(function(){
-	funkcija();
+	func();
 });
 
