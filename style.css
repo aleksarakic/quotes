@@ -29,10 +29,27 @@ html {
 
 .quotediv {
 	padding: 20px;
-	margin-top: 20px;
+	margin-top: 50px;
 	width: 600px; 
+}
+
+.twitter-share-button a {
+	text-decoration: none !important;
+	background-color: #337ab7 !important;
+	border: none;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+
+.twitter-share-button a:hover {
+	color: white;
+	background-color: #0C6694 !important;
 }
 
 .well {
    background-color: rgba(300, 245, 245, 0.1) !important;
 }
+
