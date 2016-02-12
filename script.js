@@ -1,6 +1,7 @@
-var quot = "";
+var quotAndAut = "";
 function getQuoteText(){
 	quot = $('.quote').text();
+	aut = $('.author').text();
 }
 
 var func = function(){
@@ -15,7 +16,13 @@ var func = function(){
 			  $(".quote").append($quoteText.text());
 			  $(".author").append($quoteAuthor.text());
 			  getQuoteText();
-			  $('.twitter-share-button').attr('href', "https://twitter.com/intent/tweet?text=" + quot);
+			  if(quot.length + aut.length + 10 >= 140){
+			  	surplus = aut.length + 9; 
+			  	newQuot = quot.substring(-1, 140 - surplus);
+			  	$('.twitter-share-button').attr('href', "https://twitter.com/intent/tweet?text=" + "'" + newQuot + "..." + "'" + " by " + aut);
+			  }else{
+			  	$('.twitter-share-button').attr('href', "https://twitter.com/intent/tweet?text=" + quot + " by " + aut);
+				}
 			}
 
 		var oReq = new XMLHttpRequest();
