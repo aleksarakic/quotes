@@ -1,4 +1,3 @@
-var quotAndAut = "";
 function getQuoteText(){
 	quot = $('.quote').text();
 	aut = $('.author').text();
@@ -21,7 +20,7 @@ var func = function(){
 			  	newQuot = quot.substring(-1, 140 - surplus);
 			  	$('.twitter-share-button').attr('href', "https://twitter.com/intent/tweet?text=" + "'" + newQuot + "..." + "'" + " by " + aut);
 			  }else{
-			  	$('.twitter-share-button').attr('href', "https://twitter.com/intent/tweet?text=" + quot + " by " + aut);
+			  	$('.twitter-share-button').attr('href', "https://twitter.com/intent/tweet?text=" + "'" + quot + "'" + " by " + aut);
 				}
 			}
 
